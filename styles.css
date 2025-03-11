@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+
+    --primaria: #1e314f;
+    --secundaria: #ae893b;
+    --escuro: #0f172a;
+    --terciaria: #fcebac;
+    --branco: #f2f2f2;
+    --vidro: rgba(255, 255, 255, 0.1);
+
+}
+
+body {
+
+    background-color: var(--escuro);
+    color: var(--branco);
+
+}
+
+
+.logo{
+
+    height: 300px;
+    width: 300px;
+    mix-blend-mode: overlay;
+    
+
+} 
+
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    background:rgba(32, 51, 95, 0.5);
+    width: 100%;
+    height: 20%;
+    z-index: 100;
+    padding: 1.5rem;
+    
+   
+
+
+}
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+   
+   
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    
+
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--escuro), var(--terciaria));
+
+    transition: width 0.5s ease;
+
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+   
+.dropdown {
+    display: none;
+   
+    
+
+}
+
+.dropdown-menu{
+    font-size: 18px;
+    gap: 3rem;
+    text-align: row;
+    background: #1e314f;
+    width: 450px;
+    height: 450px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    
+    
+  
+}
+
+.caixa-video{
+    width: 100%;
+    height: 100%px;
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.caixa-video video{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.mascara{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(101deg, rgba(4, 22, 57, 0.99) 17%, rgba(4, 22, 57, 0.07) 45%, rgba(4, 22, 57, 0.99) 95%);
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 3px solid var(--vidro);
+    animation: flutuar 3s ease-in-out infinite;
+
+}
+
+h1 {
+
+    font-size: 2.2rem;
+    color: var(--secundaria);
+    font-weight: bold;
+    margin: 20px;
+
+}
+
+.sub-titulo {
+
+    font-size: 1rem;
+    color: var(--branco);
+
+}
+
+.sobre {
+    padding: 2rem 1.5rem;
+
+
+}
+
+.sobre-titulo {
+    font-size: 2rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(20px);
+    background: rgba(30, 49, 79, 0.769);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.01);
+
+
+}
+
+.sobre-paragrafo {
+    text-align: center;
+    font-size: 1rem;
+
+
+}
+
+.empresas-titulo {
+
+    font-size: 2rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.empresas-caixa {
+
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(20px);
+    background: rgba(30, 49, 79, 0.769);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.01);
+
+}
+
+.empresas-paragrafo {
+
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.politica {
+    padding: 6rem 2rem;
+
+
+}
+
+.politica-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.politica-card {
+    background:  rgba(30, 49, 79, 0.769);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.politica-titulo {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+
+}
+
+
+.politica-card:hover {
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+    transform: translateY(-10px) scale(1.02);
+
+}
+
+
+
+
+.politica-paragrafo {
+    color: var(--branco);
+    line-height: 1.0rem;
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+.palestras-card {
+
+    background:  rgba(30, 49, 79, 0.769);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 16px;
+
+}
+
+.palestras-card:hover {
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+    transform: translateY(-10px);
+
+}
+
+.palestra-titulo {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+
+}
+
+.palestras-paragrafo {
+    color: var(--branco);
+    line-height: 1.0rem;
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+.desenvolvimento-card {
+    background: rgba(30, 49, 79, 0.769);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 16px;
+
+}
+
+.desenvolvimento-card:hover {
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+    transform: translateY(-10px) scale(1.02);
+
+}
+
+.desenvolvimento-titulo {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+.desenvolvimento-paragrafo {
+    color: var(--branco);
+    line-height: 1.0rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.agende-titulo{
+    font-size: 1,5rem;
+    color: var(--branco);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.caixa-agende{
+    padding: 3rem;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(20px);
+    background: rgba(30, 49, 79, 0.769);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.01);
+}
+
+.paragrafo-desenvolver{
+
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.botao-agende{
+    color: var(--branco);
+    background: linear-gradient(35deg, var(--secundaria), var(--terciaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+.link-agende{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.botao-agende:hover{
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+    background: linear-gradient(35deg, var(--primaria), var(--escuro));
+    transition: 0.5s;
+
+}
+
+
+.contatos {
+    padding: 6rem 2rem;
+
+}
+
+.contatos-titulo {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(30, 49, 79, 0.769);
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+
+}
+
+
+.grupo-form {
+    margin-bottom: 1.5rem;
+
+}
+
+.campo-form {
+
+    width: 100%;
+    padding: 1rem;
+    background: rgba(30, 49, 79, 0.769);
+    border-radius: 8px;
+    color: var(--branco);
+    border: 1px solid var(--vidro);
+    outline: none;
+
+}
+
+.campo-form:focus {
+    border-color: var(--terciaria);
+    box-shadow: 0 0 10px rgba(191, 242, 5, 0.3);
+    cursor: pointer;
+}
+
+.botao-form {
+    color: var(--branco);
+    background: linear-gradient(35deg, var(--secundaria), var(--terciaria));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.botao-form:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+    background: linear-gradient(35deg, var(--primaria), var(--escuro));
+    transition: 0.5s;
+}
+
+.perguntas{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.box01{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background:  rgba(30, 49, 79, 0.769);
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+    margin-bottom: 16px;
+}
+.box02{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(30, 49, 79, 0.769);
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+    margin-bottom: 16px;
+}
+
+.box03{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(30, 49, 79, 0.769);
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+    margin-bottom: 16px;
+}
+.box04{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(30, 49, 79, 0.769);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.01);
+    margin-bottom: 16px;
+}
+.box05{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background:  rgba(30, 49, 79, 0.769);
+    box-shadow: 0 8px 10px rgba(79, 70, 229, 0.1);
+    margin-bottom: 16px;
+}
+
+.summary, .titulo{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.summary, .paragrafo{
+    font-size: 12px;
+    align-items: center;
+}
+
+.particulas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -30;
+    opacity: 0.2;
+    background: radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%), radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%), var(--escuro);
+
+}
+
+
+
+@keyframes flutuar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+}

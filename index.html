@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <script src="scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <title>LandingPage</title>
+</head>
+
+<body>
+
+    <div class="particulas"></div>
+    <header>
+
+        <nav class="navegacao">
+            <img class="logo" src="./img/Logo-17.png" alt="logo">
+            <ul class="menu">
+
+                <li>
+                    <a href="#inicio" class="menu-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="menu-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato" class="menu-link">Contato</a>
+                </li>
+                <li>
+                    <a href="#empresas" class="menu-link">Para Empresas</a>
+                </li>
+            </ul>
+
+            <div class="dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <svg fill="#fff" width="25px" height="25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>icn/menu</title>
+                        <path
+                            d="M2 3h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 1 1 0-2zm0 4h12a1 1 0 0 1 0 2H2a1 1 0 0 1 0-2z"
+                            id="a" />
+                    </svg>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a href="#inicio" class="menu-link">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="menu-link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="menu-link">Contato</a>
+                    </li>
+                    <li>
+                        <a href="#empresas" class="menu-link">Para Empresas</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+   
+    <div class="caixa-video">
+       
+        <video class="video" src="./img/video01.mp4" loop muted autoplay></video>
+        <div class="caixa-principal">
+            <h1 class="titulo-cabecalho">Vanessa Caixeta</h1>
+            <p class="mini-titulo">Psicóloca e Consultora de RH</p>
+        </div>
+        <div class="mascara"></div>
+    </div>
+   
+    <main id="inicio" class="cabecalho">
+
+        <img src="img/01.webp" alt="Foto de Vanessa" class="foto-perfil">
+
+        <h1>Vanessa Caixeta</h1>
+        <p class="sub-titulo">Psicóloca e Consultora de RH </p>
+
+
+    </main>
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Formação em Psicologia desde 2011, atendimentos individuais presencial e online voltados para o
+                desenvolvimento pessoal e profissional, através de ferramentas e técnicas de autoestima,
+                autoconhecimento, autoconfiança, planejamento e gestão do tempo, testes de habilidades e personalidade.
+            </p>
+        </div>
+    </section>
+    <section id="empresas" class="empresas">
+        <h2 class="empresas-titulo">Para Empresas</h2>
+        <div class="empresas-caixa">
+            <p class="empresas-paragrafo">
+                Consultoria de RH para o desenvolvimento de todos os processos de Gestão de Pessoas de sua empresa,
+                dando suporte aos gestores, treinamentos de lideres e equipes visando engajamento e resultados
+                estratégicos para o negócio.
+            </p>
+        </div>
+    </section>
+
+    <section class="politica">
+
+        <div class="politica-caixa">
+
+
+            <div class="politica-card">
+                <h3 class="politica-titulo">Politica de Cargos e Salários</h3>
+                <p class="politica-paragrafo">
+                    Descrição de cargos conforme CBO.Propósito, Missão Visão e Valores.Manual Interno.Politica de
+                    Benefícios.
+                </p>
+
+            </div>
+
+
+            <div class="palestras-card">
+                <h3 class="palestra-titulo">PALESTRAS E SIPAT</h3>
+                <p class="palestras-paragrafo">
+                    Palestras dinâmicas e interativas para engajamento e motivação. Campanhas: Setembro Amarelo,
+                    Outubro
+                    Rosa; Novembro Azul, Comunicação Assertiva, Assedio entre outros
+                </p>
+            </div>
+
+
+            <div class="desenvolvimento-card">
+                <h3 class="desenvolvimento-titulo">DESENVOLVIMENTO DE LÍDERES</h3>
+                <p class="desenvolvimento-paragrafo">
+                    Palestras dinâmicas e interativas para engajamento e motivação. Campanhas: Setembro Amarelo,
+                    Outubro
+                    Rosa; Novembro Azul, Comunicação Assertiva, Assedio entre outros
+                </p>
+            </div>
+        </div>
+       
+    </section>
+    <section class="caixa-agende">
+        <h3 class="agende-titulo">Sua empresa quer desenvolver lideres e equipe?</h3>
+        <div class="caixa-paragrafo">
+            <p class="paragrafo-desenvolver">Atuo na área de Gestão de pessoas desde 2008, ajudo pequenas, médias e grandes empresas a fazer gestão de pessoas.</p>
+            <button class="botao-agende"><a class="link-agende" href="https://api.whatsapp.com/message/WF5SZARSI3KRO1?autoload=1&app_absent=0">Agende uma Reunião</a></button>
+        </div>
+
+    </section>
+
+    
+
+    <section id="contato" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+
+            </div>
+
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="campo-form" rows="6" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+
+        </form>
+
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5534991548943'
+
+            const texto = `Olá Meu nome é ${nome}, ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            window.open(url, '_blank')
+        }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+
+    <section class="box-perguntas">
+        <h3 class="perguntas">Perguntas Frequentes </h3>
+        <details class="box01">
+            <summary class="titulo">Para quem é esse produto?</summary>
+            <p class="paragrafo">Pessoas comprometidas com seu desenvolvimento pessoal e profissional, buscam
+                autoconhecimento, autoestima
+                e autoconfiança, querem aprender ferramentas práticas para se conhecer, aprender sobre emoções,
+                relacionamentos e quer fazer seu planejamento dos seus sonhos.</p>
+        </details>
+        <details class="box02">
+            <summary class="titulo">Como funciona o 'Prazo de Garantia'?</summary>
+            <p class="paragrafo">O Prazo de Garantia é o período que você tem para pedir o reembolso integral do valor
+                pago pela sua compra, caso o produto não seja satisfatório. No caso de adquirir a Jornada Ser Leve tem 7
+                dias de garantia</p>
+        </details>
+        <details class="box03">
+            <summary class="titulo">O que é e como funciona o Certificado de Conclusão digital?</summary>
+            <p class="paragrafo">Alguns cursos online oferecem um certificado digital de conclusão. Alunos podem
+                emitir esse certificado ao final do curso ou entrando em contato com a Autora. Esses certificados podem
+                ser compartilhados em redes sociais como o LinkedIn e inseridos em informações curriculares.</p>
+        </details>
+        <details class="box04">
+            <summary class="titulo">Como acessar o produto?</summary>
+            <p class="paragrafo">Você receberá o acesso por email. O conteúdo será acessado ou baixado através de um computador, celular, tablet ou outro dispositivo digital. Você também pode acessar o produto comprado nesta página:
+                01 - Faça login na Hotmart clicando em 'Entrar'
+                02 - Acesse o menu lateral, clique em 'Minha conta'
+                03 - Clique em 'Minhas compras' e lá estarão todos os produtos que você já comprou!</p>
+        </details>
+        <details class="box05">
+            <summary class="titulo">Como faço para comprar?</summary>
+            <p class="paragrafo">Para comprar este curso, clique no botão “Comprar agora”. Lembre-se de que nem todos os cursos estarão sempre disponíveis para compra. É possível que o produtor esteja preparando uma nova turma ainda sem inscrições abertas.</p>
+        </details>
+    </section>
+
+
+
+
+</body>
+
+</html>

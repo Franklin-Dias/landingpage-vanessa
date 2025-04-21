@@ -2,25 +2,25 @@
 
     nav {
 
-        .menu{
+        .menu {
 
             display: none;
-            
-           
+
+
 
         }
 
-      
 
-        .dropdown{
+
+        .dropdown {
             display: block;
-           
-        
-            
+
+
+
         }
 
-        
-        
+
+
 
         .logo {
             width: 300px;
@@ -32,31 +32,114 @@
     h1 {
         font-size: 1.5rem;
     }
-    .foto-perfil{
+
+    .foto-perfil {
         width: 250px;
         height: 250px;
     }
 
 
 
-    section{
+    section {
 
-    .titulo{
-        font-size:  16px;
-        font-weight: 500;
+        .titulo {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .paragrafo {
+            font-size: 13px;
+
+        }
+
+        .sobre-titulo {
+            margin-top: -70%;
+        }
+
+
+
     }
 
-    .paragrafo{
-        font-size: 13px;
+    section {
+
+
+
+        .div-parceira {
+            display: grid;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        .img-parceira {
+            width: 325px;
+            height: 275px;
+
+        }
+
+        .titulo-empresa-parceira {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .paragrafo-parceira {
+            font-size: 14px;
+            text-align: left;
+        }
 
     }
-    .sobre-titulo{
-        margin-top: -70%;
+
+    section {
+
+
+        .div-jornada {
+            display: grid;
+            align-items: center;
+            padding: 10px;
+
+        }
+
+        .img-jornada {
+            width: 405px;
+            height: 550px;
+
+        }
+
+        .caixa-jornada {
+            padding: 1rem;
+        }
+
+        .jornada-titulo {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .paragrafo-jornada {
+            font-size: 14px;
+            text-align: left;
+        }
+
+    }
+
+    footer {
+  
+        .mapa {
+
+            width: 400px;
+            height: 500px;
+            padding: 5px;
+            border-radius: 12px;
+
+        }
+        .caixa-rodape {
+            display: block;
+
+        }
+
     }
 
 
- 
-   }
+
+
 
 }
-
